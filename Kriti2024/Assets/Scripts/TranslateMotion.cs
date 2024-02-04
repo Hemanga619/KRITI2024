@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 
 public class TranslateMotion : MonoBehaviour
@@ -8,7 +5,6 @@ public class TranslateMotion : MonoBehaviour
     Vector2 difference = Vector2.zero;
     Camera cameras;
 
-    // Start is called before the first frame update
     void Start()
     {
         cameras = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
